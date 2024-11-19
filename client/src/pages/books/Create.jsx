@@ -44,7 +44,7 @@ const Create = () => {
   }
 
   const handleFormSubmission = () => {
-    axios.post('/api/books', book)
+    axios.post('https://mern-mvc-project.onrender.com/api/books', book)
       .then(() => setRedirect(true))
       .catch(() => alert('An error occurred'))
   }
