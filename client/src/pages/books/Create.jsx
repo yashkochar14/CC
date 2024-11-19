@@ -17,7 +17,7 @@ const Create = () => {
   useEffect(() => {
     let isMounted = true // Track if component is mounted
 
-    axios.get('/api/authors/')
+    axios.get('https://mern-mvc-project.onrender.com/api/authors/')
       .then(response => {
         if (isMounted) {
           setAuthors(

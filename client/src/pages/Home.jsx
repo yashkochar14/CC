@@ -6,7 +6,7 @@ const Home = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    axios.get('/api/books')
+    axios.get('https://mern-mvc-project.onrender.com/api/books')
       .then(response => {
         setBooks(response.data);
       })
